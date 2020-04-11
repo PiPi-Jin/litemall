@@ -12,6 +12,13 @@ import java.sql.SQLException;
 /*
    <columnOverride column="ids" javaType="java.lang.Integer[]" typeHandler="JsonIntegerArrayTypeHandler"/>
  */
+/**
+ * @Author: chenjin
+ * @Description: 实现Integer[]和varchar的转换，保存的JSON数据格式是[integer0, integer1, ...]
+ * @Date: 2020/4/11 20:02
+ * @Param:
+ * @return:
+ **/
 public class JsonIntegerArrayTypeHandler extends BaseTypeHandler<Integer[]> {
     private static final ObjectMapper mapper = new ObjectMapper();
 

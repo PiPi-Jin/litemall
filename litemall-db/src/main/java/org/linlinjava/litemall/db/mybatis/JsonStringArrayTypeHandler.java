@@ -12,6 +12,13 @@ import java.sql.SQLException;
 /*
    <columnOverride column="urls" javaType="java.lang.String[]" typeHandler="JsonStringArrayTypeHandler"/>
  */
+/**
+ * @Author: chenjin
+ * @Description: 实现String[]和varchar的转换，保存的JSON数据格式是[string0, string1, ...]
+ * @Date: 2020/4/11 20:03
+ * @Param:
+ * @return:
+ **/
 public class JsonStringArrayTypeHandler extends BaseTypeHandler<String[]> {
     private static final ObjectMapper mapper = new ObjectMapper();
 
