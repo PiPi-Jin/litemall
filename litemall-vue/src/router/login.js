@@ -37,4 +37,4 @@ export default [
     props: true,
     component: () => import('@/views/login/forget-status')
   }
-];
+]

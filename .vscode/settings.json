@@ -1,2 +1,8 @@
 {
+  "files.autoSave": "off", // 开启自动保存触发不了fix修复
+  "vetur.format.defaultFormatter.js": "prettier-eslint", // 重要，不然vue文件会都格式化成默认都js格式，而非ESlint格式
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }
